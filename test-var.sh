@@ -1,6 +1,3 @@
-# ----------------
-# test-var.sh file
-# ----------------
 #!/bin/bash
 
 inputFile=${OHPC_INPUT_LOCAL_VAR:-/opt/ohpc/pub/doc/recipes/centos7/input-var.local}
