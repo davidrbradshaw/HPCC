@@ -43,25 +43,29 @@ yum -y install http://build.openhpc.community/OpenHPC:/1.3/CentOS_7/x86_64/ohpc-
 ```
 yum -y install docs-ohpc
 ```
-10. Copy the provided template input file to use as a starting point to define local site settings:
+10a. For more tailored installations, copy the docs-ohpc template input file to define local site settings:
 ```
 cp -p /opt/ohpc/pub/doc/recipes/centos7/input.local input.local
 ```
-11. Edit input.local with a text editor to the desired settings
+10b. For more simple installations, copy the following input file to define local site settings:
+```
+wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/test-var.sh
+```
+11. Edit input-var.local with a text editor to the desired settings
 
 12. Copy the template installations script, DRAFT:
 ```
-wget ... github.com/davidrbradshaw ... recipe.sh
+wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/test-var.sh
 ```
 13. Use environment variable to define local input file:
 ```
-export OHPC_INPUT_LOCAL=./input.local
+export OHPC_INPUT_LOCAL=./input-var.local
 ```
 14. Open access to the installation file:
 ```
-chmod u+r+x recipe.sh
+chmod u+r+x test-var.sh
 ```
 15. Run the local installation
 ```
-./recipe.sh
+./test-var.sh
 ```
