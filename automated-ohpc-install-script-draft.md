@@ -49,7 +49,7 @@ cp -p /opt/ohpc/pub/doc/recipes/centos7/input.local input.local
 ```
 10b. For more simple installations, copy the following input file to define local site settings:
 ```
-wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/test-var.sh
+wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input-var.local
 ```
 11. Edit input-var.local with a text editor to the desired settings
 
