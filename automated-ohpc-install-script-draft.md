@@ -55,7 +55,7 @@ wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input-var.loca
 
 12. Copy the template installations script, DRAFT:
 ```
-wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/test-var.sh
+wget https://github.com/davidrbradshaw/HPCC/blob/master/recipe.sh
 ```
 13. Use environment variable to define local input file:
 ```
