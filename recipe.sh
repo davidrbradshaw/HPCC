@@ -1,6 +1,3 @@
-# ----------------
-# recipe.sh file
-# ----------------
 #!/bin/bash
 
 inputFile=${OHPC_INPUT_LOCAL:-/opt/ohpc/pub/doc/recipes/centos7/input.local}
@@ -11,12 +8,6 @@ if [ ! -e ${inputFile} ];then
 else
 	. ${inputFile} || { echo "Error sourcing ${inputFile}"; exit 1; }
 fi
-
-
-# ------------------
-# input.local file
-# ------------------
-# -*-sh-*-
 
 yum -y install ohpc-base
 yum -y install ohpc-warewulf
