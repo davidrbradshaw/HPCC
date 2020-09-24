@@ -10,4 +10,4 @@ else
 fi
 
 echo "testing:"
-echo "$var"
+echo "${var}"
