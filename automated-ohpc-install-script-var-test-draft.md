@@ -49,7 +49,9 @@ cp -p /opt/ohpc/pub/doc/recipes/centos7/input.local input.local
 ```
 10B Option. For simple installations, copy the following template input file to define local site settings:
 ```
-wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input.local
+cd /opt/ohpc/pub/doc/recipes/centos7/
+
+wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input-var2.local
 ```
 11. Edit input.local with a text editor to the desired settings
 
@@ -59,17 +61,17 @@ cp -p /opt/ohpc/pub/doc/reciples/vanilla/recipe.sh .
 ```
 12B Option. For simple installations, copy this template installation script, DRAFT:
 ```
-wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/recipe.sh
+wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/test-var2.sh
 ```
 13. Use environment variable to define local input file:
 ```
-export OHPC_INPUT_LOCAL=./input.local
+export OHPC_INPUT_LOCAL=./input-var2.local
 ```
 14. Open access to the installation file:
 ```
-chmod u+r+x test-var.sh
+chmod u+r+x test-var2.sh
 ```
 15. Run the local installation
 ```
-./recipe.sh
+./test-var2.sh
 ```
