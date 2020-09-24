@@ -51,6 +51,8 @@ cp -p /opt/ohpc/pub/doc/recipes/centos7/input.local input.local
 ```
 cd /opt/ohpc/pub/doc/recipes/centos7/
 
+rm input.local
+
 wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input.local
 ```
 11. Edit input.local with a text editor to the desired settings
