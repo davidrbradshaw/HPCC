@@ -49,11 +49,10 @@ cp -p /opt/ohpc/pub/doc/recipes/centos7/input.local input.local
 ```
 10B Option. For simple installations, copy the following template input file to define local site settings:
 ```
-cd /opt/ohpc/pub/doc/recipes/centos7/
+rm /opt/ohpc/pub/doc/recipes/centos7/input.local
 
-rm input.local
+wget -P /opt/ohpc/pub/doc/recipes/centos7 https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input.local
 
-wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input.local
 ```
 11. Edit input.local with a text editor to the desired settings
 
