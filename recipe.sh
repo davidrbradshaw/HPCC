@@ -22,9 +22,9 @@ perl -pi -e "s/ControlMachine=\S+/ControlMachine=me344-cluster-${ClusterNum}/" /
 
 perl -pi -e "s/ReturnToService=1/ReturnToService=2/" /etc/slurm/slurm.conf
 
-perl -pi -e "s/NodeName=c[1-4]/NodeName=compute-${ClusterNum}-[12-14]/" /etc/slurm/slurm.conf
+perl -pi -e "s/NodeName=\S+/NodeName=compute-${ClusterNum}-[12-14]/" /etc/slurm/slurm.conf
 
-perl -pi -e "s/Nodes=c[1-4]/Nodes=ALL/" /etc/slurm/slurm.conf
+perl -pi -e "s/Nodes=\S+/Nodes=ALL/" /etc/slurm/slurm.conf
 
 systemctl enable munge
 systemctl start munge
