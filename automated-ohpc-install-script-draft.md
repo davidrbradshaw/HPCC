@@ -11,11 +11,10 @@ ssh root@me344-cluster-[C].stanford.edu
 perl -pi -e "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
 ```
 3. Reboot the machine:
+Note: Your connection to the cluster will end, and you need to wait a few minutes while the cluster reboot before you can re-connect. 
 ```
 reboot
 ```
-Note: Your connection to the cluster will end, and you need to wait a few minutes while the cluster reboot before you can re-connect. 
-
 4. Once rebooted, connect through SSH and verify that SELinux is disabled:
 ```
 sestatus
