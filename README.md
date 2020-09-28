@@ -1,2 +1,2 @@
 # HPCC
-Public files for Stanford High Performance Computing Center
+Public files developed for the High Performance Computing Center at Stanford University
