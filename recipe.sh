@@ -108,9 +108,9 @@ wwbootstrap `uname -r`
 
 wwvnfs --chroot $CHROOT
 
-wwsh -y node new compute-1-12 --ipaddr=10.1.12.2 --hwaddr=${MAC_ADDR_12}
-wwsh -y node new compute-1-13 --ipaddr=10.1.13.2 --hwaddr=${MAC_ADDR_13}
-wwsh -y node new compute-1-14 --ipaddr=10.1.14.2 --hwaddr=${MAC_ADDR_14}
+wwsh -y node new compute-${ClusterNum}-12 --ipaddr=10.${ClusterNum}.12.2 --hwaddr=${MAC_ADDR_12}
+wwsh -y node new compute-${ClusterNum}-13 --ipaddr=10.${ClusterNum}.13.2 --hwaddr=${MAC_ADDR_13}
+wwsh -y node new compute-${ClusterNum}-14 --ipaddr=10.${ClusterNum}.14.2 --hwaddr=${MAC_ADDR_14}
 
 wwsh -y provision set "compute-*" --vnfs=centos7 --bootstrap=`uname -r` --files=dynamic_hosts,passwd,group,shadow,network,slurm.conf,munge.key
 
