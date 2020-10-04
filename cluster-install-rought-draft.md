@@ -89,7 +89,7 @@ rm /opt/ohpc/pub/doc/recipes/centos7/input.local
 
 wget -P /opt/ohpc/pub/doc/recipes/centos7 https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input.local
 
-wget -P https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input.local
+wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input.local
 
 ```
 11. Edit input.local with a text editor to the desired settings
