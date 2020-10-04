@@ -1,4 +1,4 @@
-## Guide to Automated OpenHPC Install, with CentOS
+## Guide to CentOS Install and Automated OpenHPC Configuration
 
 #### Stanford High Performance Computing Center
 
