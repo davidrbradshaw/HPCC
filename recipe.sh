@@ -122,10 +122,5 @@ ipmitool -H 10.${ClusterNum}.13.3 -U USERID -P PASSW0RD chassis power cycle
 ipmitool -H 10.${ClusterNum}.14.3 -U USERID -P PASSW0RD chassis power cycle
 
 yum -y install pam_krb5
-scp ${sunetid}@me344-cluster:/etc/krb5.conf /etc/
-authconfig --enablekrb5 --update
-
-useradd -m ${sunetid}
-useradd -m ${partner_sunetid}
 
 wwsh file resync passwd shadow group
