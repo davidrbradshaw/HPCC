@@ -38,22 +38,19 @@ echo "10.1.1.1 me344-cluster-[ClusterNum].localdomain me344-cluster-[ClusterNum]
 ```
 #### Open HPC Installation
 
-1. Connect to the master node (default password is `stanford`):
-```
-ssh root@me344-cluster-[ClusterNum].stanford.edu
-```
-
-2. Disable SELinux:
+1. Disable SELinux:
 ```
 perl -pi -e "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
 ```
-3. Reboot the machine:
+2. Reboot the machine:
 
 Note: Your connection to the cluster will end, and you need to wait a few minutes while the cluster reboot before you can re-connect. 
 ```
 reboot
 ```
-4. Once rebooted, connect through SSH and verify that SELinux is disabled:
+3. Once rebooted, re-connect and login through SSH. 
+
+4. verify that SELinux is disabled:
 ```
 sestatus
 ```
