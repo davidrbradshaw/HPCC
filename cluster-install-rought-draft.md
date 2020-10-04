@@ -18,11 +18,11 @@ ipmitool -H me344-cluster-[ClusterNum]-ipmi -U USERID -P PASSW0RD chassis power 
 ```
 4. Message staff to provision your cluster with the operating system. 
 
-Normally, this is done in-person at the physical clusters. Due to facility access restriction, staff will provision the operating system remotely. 
+Normally, this is done in-person at the physical clusters. Due to restrictions on facility access, staff will provision the operating system remotely. 
 
-4. Re-log into your cluster
+5. Re-log into your cluster
 
-5. Modify `/etc/hosts` so the machine knows its hostname. 
+6. Modify `/etc/hosts` so the machine knows its hostname. NNN is the last octet of the public IP address for the cluster which is listed in network information document. 
 ```
 echo "171.64.116.[NNN] me344-cluster-[ClusterNum].stanford.edu" >> /etc/hosts
 echo "10.1.1.1 me344-cluster-[ClusterNum].localdomain me344-cluster-[ClusterNum]" >> /etc/hosts
