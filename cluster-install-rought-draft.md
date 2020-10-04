@@ -23,7 +23,7 @@ ipmitool -H me344-cluster-[ClusterNum]-ipmi -U USERID -P PASSW0RD chassis power 
 echo "171.64.116.[NNN] me344-cluster-[ClusterNum].stanford.edu" >> /etc/hosts
 echo "10.1.1.1 me344-cluster-[ClusterNum].localdomain me344-cluster-[ClusterNum]" >> /etc/hosts
 ```
-##### Open HPC Installation
+#### Open HPC Installation
 
 1. Connect to the master node (default password is `stanford`):
 ```
