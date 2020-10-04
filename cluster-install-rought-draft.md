@@ -50,7 +50,7 @@ reboot
 ```
 3. Once rebooted, re-connect and login through SSH. 
 
-4. verify that SELinux is disabled:
+4. Verify that SELinux is disabled:
 ```
 sestatus
 ```
