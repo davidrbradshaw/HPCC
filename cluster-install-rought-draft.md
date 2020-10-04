@@ -1,6 +1,6 @@
 ## Guide to CentOS Install and Automated OpenHPC Configuration
 
-#### Stanford High Performance Computing Center
+### Stanford High Performance Computing Center
 
 NOTE: Text surrounded by brackets (inclusive of the brackets) is to be replaced with a relevant parameter value. For example, if your cluster number is seven, then the following instruction:
 ```
