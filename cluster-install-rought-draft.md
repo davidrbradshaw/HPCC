@@ -2,6 +2,15 @@
 
 #### Stanford High Performance Computing Center
 
+NOTE: Text surrounded by brackets (inclusive of the brackets) is to be replaced with a relevant parameter value. For example, if your cluster number is seven, then the following instruction:
+```
+ipmitool -H me344-cluster-[ClusterNum]-ipmi -U USERID -P PASSW0RD chassis bootdev pxe
+```
+should be executed as:
+```
+ipmitool -H me344-cluster-7-ipmi -U USERID -P PASSW0RD chassis bootdev pxe
+```
+
 #### CentOS Installation
 
 1. Log into your cluster:
