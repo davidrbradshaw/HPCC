@@ -16,9 +16,13 @@ ipmitool -H me344-cluster-[ClusterNum]-ipmi -U USERID -P PASSW0RD chassis bootde
 ```
 ipmitool -H me344-cluster-[ClusterNum]-ipmi -U USERID -P PASSW0RD chassis power cycle
 ```
+4. Message staff to provision your cluster with the operating system. 
 
-1. Modify `/etc/hosts` so the machine knows its hostname.
+Normally, this is done in-person at the physical clusters. Due to facility access restriction, staff will provision the operating system remotely. 
 
+4. Re-log into your cluster
+
+5. Modify `/etc/hosts` so the machine knows its hostname. 
 ```
 echo "171.64.116.[NNN] me344-cluster-[ClusterNum].stanford.edu" >> /etc/hosts
 echo "10.1.1.1 me344-cluster-[ClusterNum].localdomain me344-cluster-[ClusterNum]" >> /etc/hosts
