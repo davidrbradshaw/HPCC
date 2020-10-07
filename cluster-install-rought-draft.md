@@ -29,7 +29,7 @@ ipmitool -H me344-cluster-[ClusterNum]-ipmi -U USERID -P PASSW0RD chassis power 
 
 Normally, this is done in-person at the physical clusters. Due to restrictions on facility access, staff will provision the operating system remotely. 
 
-5. Re-log into your cluster
+5. Once rebooted, re-connect and login through SSH. Booting will take a couple of minutes after staff provision the cluster.
 
 6. Modify `/etc/hosts` so the machine knows its hostname. NNN is the last octet of the public IP address for the cluster which is listed in network information document. 
 ```
