@@ -55,9 +55,7 @@ yum -y --installroot=$CHROOT install http://vault.centos.org/7.7.1908/os/x86_64/
 yum -y --installroot=$CHROOT install http://vault.centos.org/7.7.1908/os/x86_64/Packages/kernel-debug-devel-3.10.0-1062.el7.x86_64.rpm
 
 yum -y --installroot=$CHROOT install yum-plugin-versionlock 
-chroot $CHROOT
-yum versionlock *-3.10.0-1062.el7.x86_64
-exit
+yum -y --installroot=$CHROOT versionlock *-3.10.0-1062.el7.x86_64
 
 yum -y --installroot=$CHROOT install ohpc-base-compute
 
