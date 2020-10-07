@@ -46,7 +46,7 @@ perl -pi -e "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
 ```
 reboot
 ```
-3. Re-connect and login through SSH. Note: 
+3. Re-connect and login through SSH. 
 
 4. Verify that SELinux is disabled:
 ```
