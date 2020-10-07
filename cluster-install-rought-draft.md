@@ -21,7 +21,7 @@ ssh [sunetid]@me344-cluster.stanford.edu
 ```
 ipmitool -H me344-cluster-[ClusterNum]-ipmi -U USERID -P PASSW0RD chassis bootdev pxe
 ```
-3. Reboot the machine:
+3. Power cycle the cluster. This will end your session with the cluster.
 ```
 ipmitool -H me344-cluster-[ClusterNum]-ipmi -U USERID -P PASSW0RD chassis power cycle
 ```
@@ -29,7 +29,7 @@ ipmitool -H me344-cluster-[ClusterNum]-ipmi -U USERID -P PASSW0RD chassis power 
 
 Normally, this is done in-person at the physical clusters. Due to restrictions on facility access, staff will provision the operating system remotely. 
 
-5. Once rebooted, re-connect and login through SSH. Booting will take a couple of minutes after staff provision the cluster.
+5. You will need to wait a few minutes after staff provision the cluster. Then re-connect and login through SSH. 
 
 6. Modify `/etc/hosts` so the machine knows its hostname. NNN is the last octet of the public IP address for the cluster which is listed in network information document. 
 ```
@@ -42,12 +42,11 @@ echo "10.1.1.1 me344-cluster-[ClusterNum].localdomain me344-cluster-[ClusterNum]
 ```
 perl -pi -e "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
 ```
-2. Reboot the machine: 
+2. Reboot the machine. Your session with the cluster will end, and you will need to wait a few minutes before you can re-connect.
 ```
 reboot
 ```
-Note: Your connection to the cluster will end, and you need to wait a few minutes while the cluster reboot before you can re-connect.
-3. Once rebooted, re-connect and login through SSH. 
+3. Re-connect and login through SSH. Note: 
 
 4. Verify that SELinux is disabled:
 ```
