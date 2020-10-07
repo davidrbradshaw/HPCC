@@ -114,3 +114,13 @@ chmod u+r+x recipe.sh
 ```
 ./recipe.sh
 ```
+16. 
+```
+ipmitool -H 10.${ClusterNum}.12.3 -U USERID -P PASSW0RD chassis power cycle
+ipmitool -H 10.${ClusterNum}.13.3 -U USERID -P PASSW0RD chassis power cycle
+ipmitool -H 10.${ClusterNum}.14.3 -U USERID -P PASSW0RD chassis power cycle
+
+yum -y install pam_krb5
+
+wwsh file resync passwd shadow group
+```
