@@ -42,12 +42,11 @@ echo "10.1.1.1 me344-cluster-[ClusterNum].localdomain me344-cluster-[ClusterNum]
 ```
 perl -pi -e "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
 ```
-2. Reboot the machine:
-
-Note: Your connection to the cluster will end, and you need to wait a few minutes while the cluster reboot before you can re-connect. 
+2. Reboot the machine: 
 ```
 reboot
 ```
+Note: Your connection to the cluster will end, and you need to wait a few minutes while the cluster reboot before you can re-connect.
 3. Once rebooted, re-connect and login through SSH. 
 
 4. Verify that SELinux is disabled:
