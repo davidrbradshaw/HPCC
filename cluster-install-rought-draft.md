@@ -87,12 +87,13 @@ cd /
 
 rm -f /opt/ohpc/pub/doc/recipes/centos7/input.local
 
-wget -P /opt/ohpc/pub/doc/recipes/centos7 https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input.local
-
 wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input.local
 
 ```
-11. Edit input.local with a text editor to the desired settings
+11. Edit input.local with a text editor to the desired settings. Then copy the file to the following directory:
+```
+cp input.local /opt/ohpc/pub/doc/recipes/centos7
+```
 
 12A Option. For more tailored installations, copy the docs-ohpc template installation script:
 ```
