@@ -3,8 +3,8 @@
 ClusterNum="${ClusterNum:-[ClusterNum]}"
 
 MAC_ADDR_12="${MAC_ADDR_12:-[MAC_ADDR_12]}"
-MAC_ADDR_13="${MAC_ADDR_12:-[MAC_ADDR_13]}"
-MAC_ADDR_14="${MAC_ADDR_12:-[MAC_ADDR_14]}"
+MAC_ADDR_13="${MAC_ADDR_13:-[MAC_ADDR_13]}"
+MAC_ADDR_14="${MAC_ADDR_14:-[MAC_ADDR_14]}"
 
 sunetid="${sunetid:-[sunetid]}"
 
