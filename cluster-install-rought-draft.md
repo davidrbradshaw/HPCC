@@ -129,4 +129,6 @@ useradd -m ${sunetid}
 useradd -m ${partner_sunetid}
 
 wwsh file resync passwd shadow group
+
+pdsh -w compute-${ClusterNum}-[12-14] systemctl restart slurmd
 ```
