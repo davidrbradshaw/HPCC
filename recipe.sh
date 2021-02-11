@@ -1,13 +1,13 @@
 #!/bin/bash
 
+inputFile=${OHPC_INPUT_LOCAL:-/opt/ohpc/pub/doc/recipes/centos7/input.local}
+
 if [ ! -e ${inputFile} ];then
   echo "Error: Unable to access local input file -> ${inputFile}"
   exit 1
 else
   . ${inputFile} || { echo "Error sourcing ${inputFile}"; exit 1; }
 fi
-
-inputFile=${OHPC_INPUT_LOCAL:-/opt/ohpc/pub/doc/recipes/centos7/input.local}
 
 systemctl stop firewalld
 systemctl disable firewalld
