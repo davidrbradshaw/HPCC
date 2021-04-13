@@ -1,6 +1,8 @@
 ## Guide to Automated OpenHPC Install
 #### Stanford High Performance Computing Center
 
+[C] is the cluster number, and [N] is the compute node number. For example, if you are configuring cluster 10, replace [C] with 10. Replace [N] with 12, 13, and 14 to make modifications to compute nodes 12, 13, and 14.
+
 1. Connect to the master node (default password is `stanford`):
 ```
 ssh root@hpcc-cluster-[C].stanford.edu
