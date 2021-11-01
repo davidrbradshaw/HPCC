@@ -53,7 +53,7 @@ chmod u+r+x recipe.sh
 
 9. Run the local installation
 ```
-./recipe.sh
+nohup ./recipe.sh
 ```
 
 10. Run this command for each compute node 
