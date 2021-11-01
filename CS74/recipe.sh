@@ -24,7 +24,7 @@ yum -y install docs-ohpc
 
 cd /
 rm /opt/ohpc/pub/doc/recipes/centos7/input.local
-wget -P /opt/ohpc/pub/doc/recipes/centos7 https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input.local
+wget -P /opt/ohpc/pub/doc/recipes/centos7 https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/CS74/input.local
 
 yum -y install ohpc-base
 yum -y install ohpc-warewulf
@@ -39,7 +39,7 @@ perl -pi -e "s/ControlMachine=\S+/ControlMachine=hpcc-cluster-${ClusterNum}/" /e
 
 perl -pi -e "s/ReturnToService=1/ReturnToService=2/" /etc/slurm/slurm.conf
 
-perl -pi -e "s/NodeName=\S+/NodeName=compute-${ClusterNum}-[12-14]/" /etc/slurm/slurm.conf
+perl -pi -e "s/NodeName=\S+/NodeName=compute-1-1/" /etc/slurm/slurm.conf
 
 perl -pi -e "s/Nodes=\S+/Nodes=ALL/" /etc/slurm/slurm.conf
 
@@ -123,7 +123,7 @@ wwbootstrap `uname -r`
 
 wwvnfs --chroot $CHROOT
 
-wwsh -y node new compute-1-1 --ipaddr=10.10.1.1 --hwaddr=${MAC_ADDR_12}
+wwsh -y node new compute-1-1 --ipaddr=10.10.1.1 --hwaddr=${MAC_ADDR}
 
 wwsh -y provision set "compute-*" --vnfs=centos7 --bootstrap=`uname -r` --files=dynamic_hosts,passwd,group,shadow,network,slurm.conf,munge.key
 
