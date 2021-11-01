@@ -1,4 +1,4 @@
-### Stanford High Performance Computing Center
+#### Stanford High Performance Computing Center
 
 ## Guide to Automated OpenHPC Install
 
