@@ -28,13 +28,13 @@ ssh root@hpcc-cluster-[C]
 sestatus
 ```
 
-5. Retrieve the recipe script
+5. Retrieve the recipe script:
 ```
 cd /
 wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/CS74/recipe.sh
 ```
 
-6. Retrieve the input.local file and edit it to your system's settings.
+6. Retrieve the input.local file and edit it to your system's settings:
 ```
 wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/CS74/input.local
 
@@ -51,18 +51,17 @@ export OHPC_INPUT_LOCAL=./input.local
 chmod u+r+x recipe.sh
 ```
 
-9. Run the local installation
+9. Run the local installation:
 ```
 nohup ./recipe.sh
 ```
 
-10. Run this command for each compute node 
+10. Run this command for the compute node: 
 ```
 ipmitool -H 10.2.2.2 -U USERID -P PASSW0RD chassis power cycle
 ```
 
 11. To verify that the compute nodes have booted, you can ping their hostname, i.e:
-
 ```ping compute-1-1```
 
 The output should resemble this:
