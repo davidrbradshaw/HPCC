@@ -31,6 +31,8 @@ wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/recipe.sh
 6. Retrieve the input.local file and edit it to your system's settings.
 ```
 wget https://raw.githubusercontent.com/davidrbradshaw/HPCC/master/input.local
+
+nano input.local
 ```
 7. Use environment variable to define local input file:
 ```
