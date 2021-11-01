@@ -56,7 +56,7 @@ chmod u+r+x recipe.sh
 nohup ./recipe.sh
 ```
 
-10. Run this command for the compute node: 
+10. Run this command for the compute node. You may have to run this command again if pinging (step 11) doesn't work after a few minutes.
 ```
 ipmitool -H 10.2.2.2 -U USERID -P PASSW0RD chassis power cycle
 ```
