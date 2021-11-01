@@ -23,6 +23,8 @@ reboot
 
 4. Once rebooted, connect through SSH and verify that SELinux is disabled:
 ```
+ssh root@hpcc-cluster-[C]
+
 sestatus
 ```
 
