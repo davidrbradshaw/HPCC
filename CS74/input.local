@@ -1,0 +1,9 @@
+# -*-sh-*-
+
+ClusterNum="${ClusterNum:-[ClusterNum]}"
+
+MAC_ADDR="${MAC_ADDR:-[MAC_ADDR]}"
+
+user_id="${user_id:-[user_id]}"
+
+guest_id="${guest_id:-[guest_id]}"
