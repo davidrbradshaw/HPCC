@@ -53,7 +53,7 @@ chmod u+r+x recipe.sh
 
 9. Run the local installation:
 ```
-nohup ./recipe.sh
+nohup ./recipe.sh &
 ```
 
 10. Run this command for the compute node. You may have to run this command again if pinging (step 11) doesn't work after a few minutes.
